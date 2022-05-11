@@ -1,0 +1,108 @@
+*{ 
+    margin: 0;  
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.imgBG{
+    height: 300px;
+    width: 100%;
+    position: relative;
+}
+
+form{
+    display: flex; 
+    align-items: center;
+    justify-content:center; 
+    flex-direction: column;
+}
+
+form label{
+    font-size: 100px;
+    text-transform: uppercase;
+    color: #4e526d;
+}
+
+#checkNum{
+    height: 200px;
+    width: 900px;
+    color: #4e526d;
+    font-size: 140px;
+    text-align: center;
+    border-color: #4e526d;
+    border-width: 10px;
+    border-style: solid;
+    border-radius: 100px;
+}
+
+.BGIMG{
+    width: 100%;  
+    height: 100vh;  
+    background-size: cover;  
+    background-image:url(/รูปภาพ/BG1.jpg);
+    background-position: center center;
+    filter: blur(1.4px);
+    position: relative;
+}
+
+.formcontent{
+    margin-bottom: 30px ;
+}
+
+.container1{ 
+    position: absolute;
+    top: 50%;
+    left: 47.5%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    height: auto;  
+    width: 80%;
+    margin: 40px 40px; 
+    padding: 30px 30px;
+    border-radius: 50px;
+    background-color: #ffd0dc;
+}
+
+.btn{
+    background-color: #4e526d; 
+    color: #ebdcdf; 
+    text-decoration: none; 
+    border: 2px solid transparent; 
+    font-weight: bolder; 
+    font-size: 30px;
+    text-transform: uppercase; 
+    padding: 10px 25px;
+    border-radius: 37px;
+    transition: transform 0.3s;
+    margin: 30px 10px;
+}
+
+.btn:hover{
+    transform: scale(1.2);
+    color: #424557;
+    background-color: #a0cbff; 
+    box-shadow: 0 0 5px #a0cbff, 
+                0 0 20px #a0cbff;
+}
+
+nav{
+    position: absolute;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+}
+
+footer{
+    background-color: #333333;
+    color: aliceblue;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;  
+    padding: 25px;
+    text-transform: lowercase;
+    bottom: 0;
+}
+
+@media (max-width: 921px) {
+    
+}
