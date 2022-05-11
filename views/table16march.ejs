@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <title>BlackShineLogin</title>
+    <link rel="stylesheet" href="/table.css"/>
+    <link rel="stylesheet" href="/nav.css"/>
+</head>
+
+<body>
+
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+          <i class="fas fa-bars"></i>
+        </label>
+        <a href="/"><img src="/รูปภาพ/LOGO2.png" class="logo"/></a>
+        <div class="BGnav"></div>
+        <ul>
+          <li class="item"><a href="/checkLott">Check Lottery</a></li>
+          <li class="item"><a href="/table">Table Lottery</a></li>
+          <li class="item"><a href="/insert">Insert Reward</a></li>
+          <li class="item button"><a href="/profile" class="btn2">Profile</a></li>
+        </ul>
+      </nav>
+
+    <div class="BGIMG"></div>
+      <div class="table-menu">
+            <div class="BGcontainer">
+                <div class="container1">
+                    <div class="buttonselect">
+                        <a href="/table16march" class="btn2">16 March</a>
+                        <a href="/table1april" class="btn2">1 April</a>
+                        <a href="/table16april" class="btn2">16 April</a>
+                    </div>
+                    <div class="textre">
+                        <p>รางวัลที่ 1 6,000,000 บาท</p>
+                        <div class="box">
+                            <p>เลขท้าย 2 ตัว </p>
+                            <p>1 รางวัลๆละ 2,000 บาท</p>
+                        </div>
+                    </div>
+                    <% onesixmarch.forEach(function(item){ %>
+                    <div class="reward">
+                        <div class="reward-top">
+                            <div class="first-last_2_digits">
+                                <div class="first"><p><%= item.first %></p></div>
+                                <div class="last_2_digits"><p><%= item.lasttwo %></p></div>
+                            </div>
+                        </div>
+                    </div>
+                    <% }) %> 
+                    <div class="textre2">
+                        <p>รางวัลที่ 2 5 รางวัลๆละ 200,000 บาท</p>
+                    </div>
+                    <div class="reward-bt">
+                    <% onesixmarch.forEach(function(item){ %>
+                        <p><%= item.second %></p>
+                    <% }) %> 
+                    </div>
+                    
+                    
+                </div>
+            </div>
+        </div>
+
+        <footer>
+          <p>© 2021 BlackShine the Series</p>
+        </footer>
+
+</body>
+</html>

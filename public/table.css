@@ -11,18 +11,7 @@
     position: relative;
 }
 
-form{
-    display: flex; 
-    align-items: center;
-    justify-content:center; 
-    flex-direction: column;
-}
 
-form label{
-    font-size: 100px;
-    text-transform: uppercase;
-    color: #4e526d;
-}
 
 #checkNum{
     height: 200px;
@@ -51,12 +40,13 @@ form label{
 }
 
 .container1{ 
+    display: block;
     position: absolute;
-    top: 50%;
+    top: 50%;;
     left: 47.5%;
     transform: translate(-50%,-50%);
     width: 100%;
-    height: auto;  
+    height: 700px;  
     width: 80%;
     margin: 40px 40px; 
     padding: 30px 30px;
@@ -107,6 +97,98 @@ th{
     padding: 0 30px;
     background-color: #0022ff;
 }
-@media (max-width: 921px) {
+
+.buttonselect{
+    display: flex; 
+    align-items: center;
+    justify-content:center; 
+    margin-bottom: 50px;
+    margin-top: 20px;
+}
+
+.reward{
+    display: flex; 
+    justify-content:center;
+    align-items: center;
+    flex-direction:column;
+    text-align: center;
+}
+
+.reward-top{
+    color: #424557;
+    width: 90%;
+    height: 20px;
+    margin: 20px;
+}
+
+
+
+.first{
+    display: inline-block;
+    line-height: 200px;
+    background-color: aliceblue;
+    margin: 10px;
+    margin-right: 100px;
+    font-size: 150px;
+    padding: 0 50px;
+}
+
+.last_2_digits{
+    margin-left: 100px;
+    display: inline-block;
+    line-height: 200px;
+    background-color: aliceblue;
+    margin: 10px 10px;
+    font-size: 150px;
+    padding: 0 50px;
+}
+.reward-bt{
+    background-color: aliceblue;
+    display: flex; 
+    justify-content:center;
+    align-items: center;
+    position: fixed;
+    width:74%;
+    height: 100px;
+    font-size: 30px;
+    left: 13%;
+    color: #424557;
+
+}
+.reward-bt p{
+    margin: 0 30px;
     
+}
+
+.textre{
+    color: #424557;
+    position: fixed;
+    display: flex; 
+    justify-content:center;
+    align-items: center;
+    position: fixed;
+    font-size: 30px;
+    left: 22%;
+    top: 15%;
+}
+
+
+.textre2{
+    position: fixed;
+    display: flex; 
+    justify-content:center;
+    align-items: center;
+    position: fixed;
+    color: #424557;
+    font-size: 30px;
+    top: 57%;
+    left: 30%;
+}
+
+.box{
+    margin: 0 190px;
+    display: flex; 
+    justify-content:center;
+    align-items: center;
+    flex-direction:column;
 }

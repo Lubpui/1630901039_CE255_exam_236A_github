@@ -1,0 +1,72 @@
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <title>BlackShineLogin</title>
+    <link rel="stylesheet" href="/checkLott.css"/>
+    <link rel="stylesheet" href="/nav.css"/>
+</head>
+
+<body>
+
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+          <i class="fas fa-bars"></i>
+        </label>
+        <a href="/"><img src="/รูปภาพ/LOGO2.png" class="logo"/></a>
+        <div class="BGnav"></div>
+        <ul>
+          <li class="item"><a href="/checkLott">Check Lottery</a></li>
+          <li class="item"><a href="/table">Table Lottery</a></li>
+          <li class="item"><a href="/insert">Insert Reward</a></li>
+          <li class="item button"><a href="/profile" class="btn2">Profile</a></li>
+        </ul>
+      </nav>
+
+    <div class="BGIMG"></div>
+      <div class="table-menu">
+            <div class="BGcontainer">
+                <div class="container1">
+                  <div class="buttonselect" style="text-align: center ;">
+                    <a href="/insert" class="btn2">16 March</a>
+                    <a href="/insert1april" class="btn2" >1 April</a>
+                    <a href="/insert16april" class="btn2">16 April</a>
+                </div>
+                        <h1 style="text-align: center ;">กรอกรางวัล 1 april</h1>
+                        <form action="/insert" method="post" style="font-size: 20px ;">
+                            <div>
+                                <label style="font-size: 20px ;">day</label>
+                                <input type="text" name="day" id="day"> 
+                            </div>
+                            <div>
+                                <label style="font-size: 20px ;">รางวัลที่1</label>
+                                <input type="text" name="first" id="first"> 
+                            </div>
+                            <div>
+                                <label style="font-size: 20px ;">รางวัลที่2</label>
+                                <input type="text" name="second" id="second"> 
+                            </div>
+                            <div>
+                                <label style="font-size: 20px ;">รางวัลเลขท้าย2ตัว</label>
+                                <input type="text" name="lasttwo" id="lasttwo"> 
+                            </div>
+
+                            <% if(typeof mesg != "undefined") { %>
+                              <h1><%= mesg %></h1>
+                            <% } %>
+                            <button type="submit" class="btn">Submit</button>
+                        </form>
+                </div>
+            </div>
+        </div>
+        
+        <footer>
+          <p>© 2021 BlackShine the Series</p>
+        </footer>
+
+</body>
+</html>
